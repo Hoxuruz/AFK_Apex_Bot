@@ -18,7 +18,7 @@ class ApexBot:
         # STOPS PLAYER FROM BEING KICKED FOR AFKING BY JUMPING
         elif pyautogui.locateOnScreen(f"Game Assets/in_game_constant{self.resolution}.png", confidence=.8) is not None:
             self.in_game = True
-            pydirectinput.press("space")
+            pydirectinput.press("control")
             sleep(randint(0, 10))
         # STARTS QUEUING
         elif pyautogui.locateOnScreen(f"Game Assets/ready_button{self.resolution}.png", confidence=.8) is not None:
